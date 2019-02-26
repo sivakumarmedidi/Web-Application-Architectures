@@ -1,2 +1,2 @@
 # Web-Application-Architectures
-Simple applications built using JS &amp; HTML with multiple architectures
+Simple applications built using JS and HTML with multiple architectures
