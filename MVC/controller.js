@@ -27,5 +27,4 @@ class Controller {
 	}
 }
 
-let controller = new Controller(Model, documentView);
-controller.initialize();
+export default Controller;

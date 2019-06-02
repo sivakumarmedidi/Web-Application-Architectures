@@ -29,7 +29,4 @@ class DataModel {
 	}
 }
 
-let Model = new DataModel({
-	"firstname": "Siva",
-	"lastname": "Medidi"
-})
+export default DataModel;

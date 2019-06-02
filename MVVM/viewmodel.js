@@ -4,7 +4,7 @@ class ViewModel {
 	}
 
 	bind(viewElement, attributeName) {
-		viewElement.value = this._model.getCurrentValue(attributeName);
+		viewElement[viewElement.tagName === "INPUT" ? "value" : "innerText"] = this._model.getCurrentValue(attributeName);
 
 		this._model.subscribe(attributeName, function(changedValue) {
 			for(let elem of document.getElementsByName(attributeName)) {
@@ -21,3 +21,5 @@ class ViewModel {
 		});
 	}
 }
+
+export default ViewModel;
